@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countryflags</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="py-[20px]">
+      <div class="container2 flex justify-between items-center">
+        <a href="./index.html">
+          <img
+            src="https://www.countryflags.com/wp-content/themes/countryflags/assets/images/countryflags.svg"
+            alt=""
+            class="w-[250px]"
+          />
+        </a>
+        <div class="flex items-center gap-2">
+          <input
+            id="search"
+            type="text"
+            placeholder="Search"
+            class="border border-blue-950 rounded-lg p-[5px_10px] outline-none w-[400px]"
+          />
+          <i class="fa-solid fa-search text-[#3a86ff]"></i>
+        </div>
+        <div class="flex items-center gap-4">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <button>
+            ENG <i class="fa-solid fa-chevron-down text-[14px]"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="py-[20px]">
+      <div
+        id="filterByContinentBox"
+        class="container2 flex justify-center items-center gap-[50px]"
+      >
+        <button
+          class="text-[#3a86ff] filterByContinent active rlue-900 font-[500]"
+          id="all"
+        >
+          All
+        </button>
+        <button
+          class="text-[#3a86ff] filterByContinent relative font-[500]"
+          id="Europe"
+        >
+          Europe
+        </button>
+        <button
+          class="text-[#3a86ff] filterByContinent relative font-[500]"
+          id="Africa"
+        >
+          Africa
+        </button>
+        <button
+          class="text-[#3a86ff] filterByContinent relative font-[500]"
+          id="Asia"
+        >
+          Asia
+        </button>
+        <button
+          class="text-[#3a86ff] filterByContinent relative font-[500]"
+          id="North America"
+        >
+          North America
+        </button>
+        <button
+          class="text-[#3a86ff] filterByContinent relative font-[500]"
+          id="South America"
+        >
+          South America
+        </button>
+        <button
+          class="text-[#3a86ff] filterByContinent relative font-[500]"
+          id="Oceania"
+        >
+          Oceania
+        </button>
+      </div>
+    </section>
+
+    <section class="py-[20px]">
+      <div class="px-4">
+        <div id="mainAppendDiv" class="grid grid-cols-7 gap-6">
+          <!-- flags  -->
+        </div>
+      </div>
+    </section>
+
+    <script src="./main.bundle.js"></script>
+  </body>
+</html>
